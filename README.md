@@ -14,7 +14,7 @@ You're implementing a web shop. Through conversation with the client and domain 
 - The shopping cart provides a (read-only) representation of its contents (e.g., for displaying in the UI), in order of sequence in which the items were added.
 - The shopping cart has a total price (in Euros), which is the sum of the items in the shopping cart.
 - Retrieving the shopping cart (from whichever persistence mechanism is used) fetches the current prices of the items in the shopping cart in the desired currency (let's assume only Euros for now).
-- When completing the purchase, an order is created from the contents of the shopping cart along with the shipping address and payment details.
+- When completing the purchase, an order is created from the contents of the shopping cart along with the shipping address and payment details, and optionally a discount voucher.
 - An invoice can be generated from an order.
   - An invoice contains line items, each one with the product name, product number (this is not necessarily the technical ID used in a database!), quantity, unit price (for a single unit) and price (for the total quantity).
   - An invoice has a total price in the desired currency (let's assume only Euros for now).
